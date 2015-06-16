@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/video_popupwindow"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/video_dialogsetting_LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/video_setting_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@null"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/editext_delete_btn_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center|start"
+                android:text="弹幕透明度" />
+
+            <SeekBar
+                android:id="@+id/video_setting_danmaku_alpha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center|start"
+                android:text="弹幕的大小" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/text_view_horizontal_gap"
+                    android:paddingLeft="@dimen/text_view_horizontal_gap"
+                    android:paddingRight="@dimen/text_view_horizontal_gap"
+                    android:paddingStart="@dimen/text_view_horizontal_gap"
+                    android:text="@string/video_setting_text_lesser"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/lesser_checkbox"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/checkbox_bg"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingEnd="@dimen/text_view_horizontal_gap"
+                    android:paddingLeft="@dimen/text_view_horizontal_gap"
+                    android:paddingRight="@dimen/text_view_horizontal_gap"
+                    android:paddingStart="@dimen/text_view_horizontal_gap"
+                    android:text="@string/video_setting_text_normal"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/normal_checkbox"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/checkbox_bg"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingEnd="@dimen/text_view_horizontal_gap"
+                    android:paddingLeft="@dimen/text_view_horizontal_gap"
+                    android:paddingRight="@dimen/text_view_horizontal_gap"
+                    android:paddingStart="@dimen/text_view_horizontal_gap"
+                    android:text="@string/video_setting_text_larger"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/larger_checkbox"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/checkbox_bg"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingEnd="@dimen/text_view_horizontal_gap"
+                    android:paddingLeft="@dimen/text_view_horizontal_gap"
+                    android:paddingRight="@dimen/text_view_horizontal_gap"
+                    android:paddingStart="@dimen/text_view_horizontal_gap"
+                    android:text="@string/video_setting_text_oversized"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/oversized_checkbox"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/checkbox_bg"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center|start"
+                android:text="视频的亮度" />
+
+            <SeekBar
+                android:id="@+id/video_setting_screen_luminance_seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="0.72" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

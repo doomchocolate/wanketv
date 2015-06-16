@@ -1,0 +1,201 @@
+<resources>
+
+    <string name="app_name">看你玩</string>
+    <string name="recommend">推荐</string>
+    <string name="live">直播</string>
+    <string name="game">游戏</string>
+    <string name="mine">我的</string>
+    <string name="delete">删除</string>
+    <string name="live_channel_title">直播——%s</string>
+    <string name="start_time">0:00</string>
+    <string name="copyright">蓝港在线 版权所有</string>
+    <string name="update_versions">已是最新版本</string>
+    <string name="hint_no_data">没有数据哦！</string>
+    <string name="network">无网络连接</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <!-- toast string -->
+    <string name="danmaku_connection_failed">连接弹幕服务器失败！</string>
+    <string name="danmaku_login_failed">登录弹幕服务器失败！</string>
+    <string name="danmaku_send_too_fast">发送弹幕速度太快！</string>
+    <string name="subscribe_need_login">订阅频道需要登录哦！</string>
+    <string name="need_login_hint">需要登录哦！</string>
+    <string name="need_data_hint">还没数据哦！</string>
+    <string name="need_data_hint_ok">提交成功！</string>
+
+    <!-- danmaku related -->
+    <string name="danmaku_edittext_hint">请输入您要发送的弹幕</string>
+
+    <!-- fragmen recommend -->
+    <string name="fragment_recommend_game_title_yxlm">英雄联盟</string>
+    <string name="fragment_recommend_game_title_dota2">DOTA2</string>
+    <string name="fragment_recommend_game_title_lscs">炉石传说</string>
+    <string name="fragment_recommend_game_title_zjyx">主机游戏</string>
+
+    <!-- fragment my -->
+    <string name="fragment_my_click_to_login">点击登录</string>
+    <string name="fragment_my_fav">我的关注</string>
+    <string name="fragment_my_information">我的资料</string>
+    <string name="fragment_my_history">观看历史</string>
+    <string name="fragment_my_setting">设置选项</string>
+    <string name="fragment_my_about">关于我们</string>
+
+    <!-- setting activity -->
+    <string name="setting_activity_system_setting">系统设置</string>
+    <string name="setting_activity_decode_by_hardware">硬件解码</string>
+    <string name="setting_activity_auto_play_in_23G">2G/3G自动播放视频</string>
+    <string name="setting_activity_danmaku_setting">弹幕设置</string>
+    <string name="setting_activity_danmaku_setting_alpha">弹幕透明度</string>
+    <string name="modify_password">修改密码</string>
+    <string name="account_management">账户管理</string>
+    <string name="feedback"><u>意见反馈</u></string>
+
+    <!-- login activity -->
+    <string name="login_username_hint">请输入账号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="logout">退出登录</string>
+    <string name="login_username_is_empty">账号为空，请输入账号！</string>
+    <string name="login_username_is_error">账号格式错误，请输入正确的邮箱地址！</string>
+    <string name="login_password_is_empty">密码为空，请输入密码！</string>
+    <string name="login_password_is_error">密码错误，请重试！</string>
+    <string name="verify_password_hint">请确认密码</string>
+    <string name="register_email_hint">请输入邮箱</string>
+    <string name="confirm_password_is_error">两次输入密码错误，请重新输入！</string>
+    <string name="register_email_is_empty">邮箱为空，请输入邮箱地址！</string>
+    <string name="register_email_is_error">邮箱错误，请重新输入！</string>
+    <string name="email_title_with_gap">邮\u0020箱</string>
+    <string name="password_title_with_gap">密\u0020码</string>
+    <string name="gender_title_with_gap">性\u0020别</string>
+    <string name="change_btn_title_with_gap"><u>更改</u></string>
+    <string name="information_activity_get_user_info_error">获取用户资料失败！</string>
+    <string name="information_activity_title">我的资料</string>
+    <string name="changepassword_activity_title">修改密码</string>
+    <string name="history_activity_title">历史记录</string>
+    <string name="information_activity_fans">粉丝：%s</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+
+    <!-- fav activity -->
+    <string name="select_all">批量选择</string>
+    <string name="confirm_delete">确认删除</string>
+
+    <!-- history activity -->
+    <string name="history_dialog_title">你确定要删除吗？</string>
+    <string name="history_dialog_bt_ok">确定</string>
+    <string name="history_dialog_bt_cancel">取消</string>
+
+    <!-- video activity -->
+    <string name="open_danmaku">打开弹幕</string>
+    <string name="close_danmaku">关闭弹幕</string>
+    <string name="screen_scale_type_16x9">16:9</string>
+    <string name="screen_scale_type_auto">自适应</string>
+    <string name="screen_scale_type_full">全屏</string>
+    <!-- crop -->
+    <string name="crop__saving">保存照片...</string>
+    <string name="crop__wait">请等待...</string>
+    <string name="crop__pick_error">没找到图片</string>
+    <string name="crop__done">完成</string>
+    <string name="crop__cancel">取消</string>
+    <!-- feedback -->
+    <string name="feedback_submit">提交</string>
+    <string name="feedback_hint_top">请写下您的意见反馈，我们将会不断的改进，谢谢！</string>
+    <string name="feedback_hint_bottom">请留下你的电话或QQ，我们会联系您。</string>
+    <!-- about -->
+    <string name="about_update">检查更新</string>
+    <!-- videoSetting -->
+    <string name="video_setting_text_lesser">较小</string>
+    <string name="video_setting_text_normal">正常</string>
+    <string name="video_setting_text_larger">较大</string>
+    <string name="video_setting_text_oversized">超大</string>
+    <!-- changepassword -->
+    <string name="changepassword_ok">确认</string>
+    <string name="changepassword_new_password_hint">请输入新密码</string>
+    <string name="changepassword_verify_password_hint">请确认密码</string>
+    <string name="change_password_is_empty">密码不能为空！</string>
+    <!-- SearchActivity -->
+    <string name="search_hint">请输入您要查找的内容</string>
+    <string name="search_history">清空搜索记录</string>
+    <string name="search_history_title">搜索记录</string>
+    <!-- share -->
+    <string name="share_xinlang">新浪微博</string>
+    <string name="share_weixin">微信</string>
+    <string name="share_pengyouquan">朋友圈</string>
+    <string name="share_ok">分享</string>
+    <string name="share_noweixin">未安装微信，请安装！</string>
+    <!-- 功能列表 -->
+    <string name="weibosdk_demo_feature_oauth">微博授权</string>
+    <string name="weibosdk_demo_feature_share">分享到微博</string>
+    <string name="weibosdk_demo_feature_login_logout">登录注销按钮</string>
+    <string name="weibosdk_demo_feature_open_api">开放接口（Open API）</string>
+
+    <!-- 获取 Token -->
+    <string name="weibosdk_demo_obtain_token_via_sso">SSO（单点登录）授权</string>
+    <string name="weibosdk_demo_obtain_token_via_signature">Web 授权</string>
+    <string name="weibosdk_demo_obtain_token_via_code">通过 Code 获取 Token</string>
+    <string name="weibosdk_demo_token_info">Token 信息：</string>
+    <string name="weibosdk_demo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <!-- 分享微博入口界面 -->
+
+    <string name="weibosdk_demo_is_support_sdk">当前微博客户端是否支持 SDK</string>
+    <string name="weibosdk_demo_register_app_to_weibo">注册应用到微博</string>
+    <string name="weibosdk_demo_share_to_weibo">分享到微博</string>
+    <string name="weibosdk_demo_not_support_api_hint">微博客户端不支持 SDK 分享或微博客户端未安装或微博客户端是非官方版本。</string>
+    <string name="weibosdk_demo_has_installed_weibo">\t已安装</string>
+    <string name="weibosdk_demo_has_not_installed_weibo">\t未安装</string>
+    <string name="weibosdk_demo_cancel_download_weibo">\t取消下载</string>
+    <string name="weibosdk_demo_toast_register_app_to_weibo">已注册，请打开微博客户端查看是否注册成功。</string>
+
+    <!-- 分享微博主界面 -->
+    <string name="weibosdk_demo_share_to_weibo_title">从本应用->微博->本应用</string>
+    <string name="weibosdk_demo_share_from_weibo_title">从微博->本应用->微博</string>
+    <string name="weibosdk_demo_share_default_text">欢迎使用新浪微博 SDK</string>
+    <string name="weibosdk_demo_share_to">分  享</string>
+    <string name="weibosdk_demo_share_text_title">分享文字</string>
+    <string name="weibosdk_demo_share_image_title">分享图片</string>
+    <string name="weibosdk_demo_share_webpage_title">分享网页</string>
+    <string name="weibosdk_demo_share_music_title">分享音乐</string>
+    <string name="weibosdk_demo_share_video_title">分享视频</string>
+    <string name="weibosdk_demo_share_voice_title">分享声音</string>
+
+    <!-- 分享所用的测试数据 -->
+
+    <string name="weibosdk_demo_app_url">https://github.com/mobileresearch/weibo_android_sdk/blob/master/WeiboSDKDemo.apk</string>
+    <string name="weibosdk_demo_test_music_url">http://music.sina.com.cn/yueku/i/2850305.html</string>
+
+    <!-- NOTE: Voice 的 URL 与 Music 一样 -->
+    <string name="weibosdk_demo_test_voice_url">http://music.sina.com.cn/yueku/i/2850305.html</string>
+
+    <!-- 分享示例模板 -->
+    <string name="weibosdk_demo_share_text_template">我正在使用微博客户端发博器分享文字</string>
+
+    <!-- 分享成功失败的 Toast -->
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="weibosdk_demo_toast_share_response_args_success">收到微博发起的请求成功</string>
+    <string name="weibosdk_demo_toast_share_response_args_failed">收到客户端请求消息失败</string>
+
+    <!-- 登录/注销按钮 -->
+    <string name="weibosdk_demo_logout">注销</string>
+    <string name="weibosdk_demo_logout_success">已注销</string>
+    <string name="weibosdk_demo_logout_failed">注销失败</string>
+    <string name="weibosdk_demo_logout_failed_1">注销失败，请检查 Token 是否正确（一个 token 不能重复注销多次）</string>
+
+    <!-- OpenAPI -->
+    <string name="weibosdk_demo_openapi_revoke_auth_success">授权回收成功</string>
+    <string name="weibosdk_demo_openapi_revoke_auth_failed">授权回收失败</string>
+    <string name="weibosdk_demo_openapi_invite_uid_hint">请输入被邀请人的uid</string>
+    <string name="weibosdk_demo_access_token_is_empty">Access Token 不存在，请先登录</string>
+    <string name="weibosdk_demo_get_home_mblog">获取首页微博信息流</string>
+    <string name="weibosdk_demo_get_comment">获取微博评论信息流</string>
+    <string name="weibosdk_demo_get_group">获取微博好友分组</string>
+
+</resources>

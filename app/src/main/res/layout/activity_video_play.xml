@@ -1,0 +1,287 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_player_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/player_surface_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <SurfaceView
+            android:id="@+id/video_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <master.flame.danmaku.ui.widget.DanmakuSurfaceView
+        android:id="@+id/danmamu_surface"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <View
+        android:id="@+id/full_screen_controller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/video_controll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#80333333"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/video_player_panel_controller_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:paddingEnd="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingStart="20dp"
+            android:src="@drawable/video_player_pause" />
+
+        <Chronometer
+            android:id="@+id/elapse_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/video_player_panel_controller_btn"
+            android:layout_toRightOf="@id/video_player_panel_controller_btn"
+            android:text="@string/start_time"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:src="@drawable/video_player_setting" />
+
+        <TextView
+            android:id="@+id/screen_adjust_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/video_player_panel_controller_btn"
+            android:layout_alignTop="@id/video_player_panel_controller_btn"
+            android:layout_toLeftOf="@id/setting_btn"
+            android:layout_toStartOf="@id/setting_btn"
+            android:background="@drawable/video_panel_btn_bg"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/screen_scale_type_auto"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/danmuku_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/setting_btn"
+            android:layout_toStartOf="@id/setting_btn"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:src="@drawable/video_player_close_danmaku" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#80333333"
+        android:fitsSystemWindows="true"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/video_player_top_panel_back"
+                android:drawableStart="@drawable/video_player_top_panel_back"
+                android:ellipsize="end"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:paddingEnd="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/video_top_panel_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/video_player_top_panel_share_btn"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/video_top_panel_right_widget"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/video_top_panel_battery"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/battery" />
+
+                <TextView
+                    android:id="@+id/video_top_panel_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_top_danmaku_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#80333333"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/video_top_danmaku_panel_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/video_player_dadmaku_panel_send_btn" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/video_top_danmaku_panel_send"
+            android:layout_toStartOf="@id/video_top_danmaku_panel_send"
+            android:background="@drawable/video_player_dadmaku_panel_edit_bg"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/video_top_danmaku_panel_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center|start"
+                android:hint="@string/danmaku_edittext_hint"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/video_top_danmaku_panel_hot_danmaku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/video_player_dadmaku_panel_hot_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/video_invoke_danmaku_panel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/video_controll_container"
+        android:layout_alignEnd="@id/video_controll_container"
+        android:layout_alignRight="@id/video_controll_container"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@null"
+        android:src="@drawable/video_player_open_danmaku_panel_normal" />
+
+    <ImageView
+        android:id="@+id/video_player_lock_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/video_controll_container"
+        android:layout_alignLeft="@id/video_controll_container"
+        android:layout_alignStart="@id/video_controll_container"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@null"
+        android:src="@drawable/video_player_unlock" />
+
+    <ListView
+        android:id="@+id/video_top_danmaku_panel_hot_danmaku_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80333333"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="@drawable/list_selector"
+        android:visibility="invisible" />
+
+</RelativeLayout>

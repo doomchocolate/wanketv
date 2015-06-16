@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="panel_bg">#80333333</color>
+    <color name="text_white_color">#FFFFFFFF</color>
+    <color name="text_blue_color">#FF34D1FB</color>
+    <color name="text_black_color">#FF707070</color>
+    <color name="text_bluegrey_color">#ebf1f6</color>
+    <color name="grey">#FFCCCCCC</color>
+    <color name="divider">#FFB9D3E0</color>
+    <color name="bisque">#FFA500</color>
+    <color name="activity_bg">#FF9B9EA3</color>
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="alpha">#e0000000</color>
+
+</resources>

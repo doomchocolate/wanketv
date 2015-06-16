@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_indicator_gap">12.5dp</dimen>
+    <dimen name="bottom_indicator_raduis">4dp</dimen>
+    
+    <dimen name="grid_view_horizontal_gap">10dp</dimen>
+    <dimen name="grid_view_vertical_gap">10dp</dimen>
+    <dimen name="avatar_big_size">100dp</dimen>
+    
+    <dimen name="text_view_horizontal_gap">8dp</dimen>
+    
+    <dimen name="bottom_panel_height">44dp</dimen>
+      <dimen name="crop__bar_height">48dp</dimen>
+</resources>
